@@ -1,0 +1,17 @@
+---
+import MenuButton from "./MenuButton.vue";
+import MenuSlider from "./MenuSlider.vue";
+import NavLinks from "./NavLinks.astro";
+
+const pathname = Astro.url.pathname;
+---
+
+<nav class="flex items-center justify-between p-6 md:h-24 md:p-0 xl:h-[8.5rem] xl:pt-10">
+  <div class="flex shrink-0 items-center justify-center md:w-32">
+    <img src="/favicon.svg" alt="" class="~/md:~size-10/12 object-contain" />
+  </div>
+  <NavLinks />
+
+  <MenuButton client:load />
+  <MenuSlider active={pathname} client:load />
+</nav>
