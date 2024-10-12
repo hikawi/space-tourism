@@ -1,0 +1,17 @@
+{
+  "language": {
+    "name": "Tiếng Việt"
+  },
+  "shared": {
+    "home": "Trang chủ",
+    "destination": "Điểm đến",
+    "crew": "Đoàn",
+    "technology": "Công nghệ"
+  },
+  "main": {
+    "title": "Vậy, nơi bạn muốn đến là",
+    "space": "Vũ trụ",
+    "text": "Nói thật, nếu bạn muốn đi đến không gian, chúng ta nên đi đến các hành tinh khác hoặc những nơi xa xôi, sâu thẳm trong vũ trụ sẽ thú vị hơn. Hãy cùng chúng tôi phiêu lưu vũ trụ ngoài sức tưởng tượng.",
+    "explore": "Khám phá"
+  }
+}

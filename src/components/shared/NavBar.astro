@@ -1,7 +1,8 @@
 ---
 import MenuButton from "./MenuButton.vue";
 import MenuSlider from "./MenuSlider.vue";
-import NavLinks from "./NavLinks.astro";
+import NavLinks from "./NavLinks.vue";
+import TranslateDropdown from "./TranslateDropdown.vue";
 
 const pathname = Astro.url.pathname;
 ---
@@ -10,8 +11,9 @@ const pathname = Astro.url.pathname;
   <div class="flex shrink-0 items-center justify-center md:w-32">
     <img src="/favicon.svg" alt="" class="~/md:~size-10/12 object-contain" />
   </div>
-  <NavLinks />
+  <NavLinks pathname={pathname.toLowerCase()} client:load />
 
   <MenuButton client:load />
   <MenuSlider active={pathname} client:load />
+  <TranslateDropdown client:idle />
 </nav>

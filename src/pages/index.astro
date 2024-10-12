@@ -1,4 +1,5 @@
 ---
+import HeroHome from "@/components/home/HeroHome.vue";
 import NavBar from "@/components/shared/NavBar.astro";
 import PageLayout from "@/layouts/PageLayout.astro";
 ---
@@ -6,6 +7,7 @@ import PageLayout from "@/layouts/PageLayout.astro";
 <PageLayout title="Space Tourism" description="Let's explore the outer space and learn about the universe.">
   <main class="size-full min-h-screen">
     <NavBar />
+    <HeroHome client:load />
   </main>
 </PageLayout>
 
