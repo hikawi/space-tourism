@@ -13,5 +13,15 @@
     "space": "Vũ trụ",
     "text": "Nói thật, nếu bạn muốn đi đến không gian, chúng ta nên đi đến các hành tinh khác hoặc những nơi xa xôi, sâu thẳm trong vũ trụ sẽ thú vị hơn. Hãy cùng chúng tôi phiêu lưu vũ trụ ngoài sức tưởng tượng.",
     "explore": "Khám phá"
+  },
+  "destination": {
+    "pick": "Chọn điểm đến",
+    "moon": "Mặt trăng",
+    "moonDescription": "Từ đây, bạn có thể nhìn thấy hành tinh của chúng ta một cách khác lạ. Đây thật là một chuyến đi thư giãn. Khi trở về, bạn sẽ cảm thấy nhẹ nhàng hơn. Tranh thủ đang ở đây, hãy thăm điểm hạ cánh của Luna 2 và Apollo 11, và tìm hiểu một chút về lịch sử.",
+    "moonDistance": "38.44 triệu km",
+    "moonTravel": "3 ngày",
+    "mars": "Sao Hỏa",
+    "europa": "Europa",
+    "titan": "Titan"
   }
 }

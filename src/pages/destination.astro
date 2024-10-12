@@ -1,0 +1,16 @@
+---
+import ChooseDestination from "@/components/destinations/ChooseDestinationText.vue";
+import DestinationSwitcher from "@/components/destinations/DestinationSwitcher.vue";
+import NavBar from "@/components/shared/NavBar.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
+---
+
+<PageLayout title="Destinations" description="Choose your destination for this space expedition.">
+  <main class="flex size-full min-h-screen flex-col justify-between">
+    <NavBar />
+    <div class="flex flex-col gap-6 p-6 md:p-10 xl:px-40 xl:py-12">
+      <ChooseDestination client:load />
+      <DestinationSwitcher client:load />
+    </div>
+  </main>
+</PageLayout>
