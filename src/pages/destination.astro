@@ -6,7 +6,7 @@ import PageLayout from "@/layouts/PageLayout.astro";
 ---
 
 <PageLayout title="Destinations" description="Choose your destination for this space expedition.">
-  <main class="flex size-full min-h-screen flex-col justify-between">
+  <main class="flex size-full min-h-screen flex-col">
     <NavBar />
     <div class="flex flex-col gap-6 p-6 md:p-10 xl:px-40 xl:py-12">
       <ChooseDestination client:load />
@@ -14,3 +14,22 @@ import PageLayout from "@/layouts/PageLayout.astro";
     </div>
   </main>
 </PageLayout>
+
+<style>
+  main {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    @apply bg-cover bg-no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+  }
+
+  @media (min-width: 1280px) {
+    main {
+      background-image: url("../assets/destination/background-destination-desktop.jpg");
+    }
+  }
+</style>

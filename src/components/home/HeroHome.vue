@@ -28,11 +28,12 @@ const main = useStore($main);
     <div
       class="flex w-full items-center justify-center py-28 xl:justify-end xl:p-0"
     >
-      <button
-        class="text-preset-4 size-36 rounded-full bg-white text-lg uppercase text-blue-900 ring-0 duration-200 hover:text-opacity-50 hover:ring-[88px] hover:ring-white hover:ring-opacity-10 md:size-[17rem] md:text-[2rem]"
+      <a
+        class="text-preset-4 flex size-36 items-center justify-center rounded-full bg-white text-lg uppercase text-blue-900 ring-0 duration-200 hover:text-opacity-50 hover:ring-[88px] hover:ring-white hover:ring-opacity-10 md:size-[17rem] md:text-[2rem]"
+        href="/destination"
       >
         {{ main.explore }}
-      </button>
+      </a>
     </div>
   </div>
 </template>

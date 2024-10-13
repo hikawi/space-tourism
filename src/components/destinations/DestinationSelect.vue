@@ -35,7 +35,7 @@ function handleKeyPress(e: KeyboardEvent, idx: number) {
 
 <template>
   <div
-    class="flex w-full flex-row items-center justify-center gap-8 px-9"
+    class="flex w-full flex-row items-center justify-center gap-8 px-9 xl:justify-start xl:px-0"
     role="radiogroup"
   >
     <div

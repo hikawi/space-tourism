@@ -21,7 +21,18 @@
     "moonDistance": "38.44 triệu km",
     "moonTravel": "3 ngày",
     "mars": "Sao Hỏa",
+    "marsDescription": "Đừng quên mang theo đôi giày leo núi. Đó là thiết yếu để leo núi cao nhất trong hệ Mặt Trời, núi Olympus Mons. Nó lớn gấp 2.5 lần so với núi Everest trên Trái Đất.",
+    "marsDistance": "225 triệu km",
+    "marsTravel": "9 tháng",
     "europa": "Europa",
-    "titan": "Titan"
+    "europaDescription": "Europa, trong số 4 mặt trăng Galileo quay quanh sao Mộc, là lựa chọn lý tưởng cho những người yêu thích mùa đông. Với bề mặt băng, bạn có thể trượt băng, chơi curling, khúc côn cầu hoặc thư giãn ở một căn hộ ấm cúng giữa mùa đông.",
+    "europaDistance": "628 triệu km",
+    "europaTravel": "3 năm",
+    "titan": "Titan",
+    "titanDescription": "Titan, một trong số ít mặt trăng có khí quyển dày đặc ngoài Trái Đất, giống như một ngôi nhà thứ hai (chỉ là lạnh vài trăm độ thôi!). Bạn cũng có thể thưởng thức cảnh đẹp của các vòng của sao thổ nữa.",
+    "titanDistance": "1.6 tỷ km",
+    "titanTravel": "7 năm",
+    "distance": "Khoảng cách",
+    "travel": "Thời gian di chuyển"
   }
 }
