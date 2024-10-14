@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import { $destination } from "@/i18n/translations";
-import { useStore } from "@nanostores/vue";
 import { useTemplateRef } from "vue";
 
 const alts = ["moon", "mars", "europa", "titan"];
 const dest = defineModel<number>();
-const tl = useStore($destination);
-
 const destRefs = useTemplateRef<HTMLDivElement[]>("destinations");
 
 // Custom handle key presses since we use radio groups role to accurately style
@@ -53,7 +49,7 @@ function handleKeyPress(e: KeyboardEvent, idx: number) {
       tabindex="0"
       ref="destinations"
     >
-      {{ (tl as any)[choice] }}
+      {{ choice }}
     </div>
   </div>
 </template>

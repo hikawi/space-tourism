@@ -1,39 +1,39 @@
 ---
-import DestinationSwitcher from "@/components/destinations/DestinationSwitcher.vue";
+import CrewCarousel from "@/components/crew/CrewCarousel.vue";
 import NavBar from "@/components/shared/NavBar.astro";
 import PageLayout from "@/layouts/PageLayout.astro";
 ---
 
-<PageLayout title="Destinations" description="Choose your destination for this space expedition.">
+<PageLayout title="Crew" description="Meet the crew of members that help you get into space">
   <main class="flex size-full min-h-screen flex-col">
     <NavBar />
     <div class="flex flex-col gap-6 p-6 md:p-10 xl:px-40 xl:py-12">
       <div
         class="text-preset-6 md:text-preset-5 flex w-full flex-row items-center justify-center gap-6 text-center font-barlow-condensed text-base uppercase tracking-[0.15rem] md:justify-start md:text-left md:text-xl xl:text-[1.75rem]"
       >
-        <span class="opacity-25">01</span>
-        <span>Pick your destination</span>
+        <span class="opacity-25">02</span>
+        <span>Meet your crew</span>
       </div>
-      <DestinationSwitcher client:load />
+      <CrewCarousel client:load />
     </div>
   </main>
 </PageLayout>
 
 <style>
   main {
-    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
     @apply bg-cover bg-no-repeat;
   }
 
   @media (min-width: 768px) {
     main {
-      background-image: url("../assets/destination/background-destination-tablet.jpg");
+      background-image: url("../assets/crew/background-crew-tablet.jpg");
     }
   }
 
   @media (min-width: 1280px) {
     main {
-      background-image: url("../assets/destination/background-destination-desktop.jpg");
+      background-image: url("../assets/crew/background-crew-desktop.jpg");
     }
   }
 </style>

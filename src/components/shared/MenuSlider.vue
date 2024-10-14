@@ -1,15 +1,8 @@
 <script setup lang="ts">
-import { $language, $shared } from "@/i18n/translations";
 import { $menuOpen } from "@/stores/menu-open";
-import { $tlMenuOpen } from "@/stores/translate-menu-open";
 import { useStore } from "@nanostores/vue";
-import { onMounted, ref } from "vue";
-import IconTranslate from "./IconTranslate.vue";
 
 const menuOpen = useStore($menuOpen);
-const language = useStore($language);
-const shared = useStore($shared);
-const ignited = ref(false);
 
 const links = [
   { name: "home", path: "/" },
@@ -17,10 +10,6 @@ const links = [
   { name: "crew", path: "/crew" },
   { name: "technology", path: "/technology" },
 ];
-
-onMounted(() => {
-  ignited.value = true;
-});
 
 defineProps<{
   active: string;
@@ -48,20 +37,10 @@ defineProps<{
           :class="{ 'border-r-2 border-white': active === link.path }"
         >
           <a :href="link.path">
-            {{ (shared as any)[link.name] }}
+            {{ link.name }}
           </a>
         </li>
       </ol>
-
-      <!-- The translation button -->
-      <button
-        class="text-preset-8 flex flex-row items-center gap-2"
-        @click="$tlMenuOpen.set(true)"
-      >
-        <IconTranslate class="size-6" />
-
-        {{ language.name }}
-      </button>
     </div>
   </div>
 </template>
