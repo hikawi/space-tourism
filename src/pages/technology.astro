@@ -1,0 +1,41 @@
+---
+import NavBar from "@/components/shared/NavBar.astro";
+import TechnologySlide from "@/components/technology/TechnologySlide.vue";
+import PageLayout from "@/layouts/PageLayout.astro";
+---
+
+<PageLayout title="Technology" description="What crazy inventions helped you get into space?">
+  <main class="flex size-full min-h-screen flex-col">
+    <NavBar />
+
+    <div class="flex flex-col gap-6 xl:py-12">
+      <div
+        class="text-preset-6 md:text-preset-5 flex w-full flex-row items-center justify-center gap-6 text-center font-barlow-condensed text-base uppercase tracking-[0.15rem] md:justify-start md:px-10 md:text-left md:text-xl xl:px-40 xl:text-[1.75rem]"
+      >
+        <span class="opacity-25">03</span>
+        <span>Space Launch 101</span>
+      </div>
+
+      <TechnologySlide client:load />
+    </div>
+  </main>
+</PageLayout>
+
+<style>
+  main {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+    @apply bg-cover bg-top bg-no-repeat;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      background-image: url("../assets/technology/background-technology-tablet.jpg");
+    }
+  }
+
+  @media (min-width: 1280px) {
+    main {
+      background-image: url("../assets/technology/background-technology-desktop.jpg");
+    }
+  }
+</style>

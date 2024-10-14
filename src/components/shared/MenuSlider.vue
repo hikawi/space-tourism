@@ -34,7 +34,7 @@ defineProps<{
         <li
           v-for="link in links"
           class="text-preset-8 block uppercase"
-          :class="{ 'border-r-2 border-white': active === link.path }"
+          :class="{ 'border-r-[3px] border-white': active === link.path }"
         >
           <a :href="link.path">
             {{ link.name }}
