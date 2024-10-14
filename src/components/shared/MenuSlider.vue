@@ -19,7 +19,7 @@ defineProps<{
 <template>
   <!-- The entire screen to block scrolling while this menu is available -->
   <div
-    class="fixed inset-0 z-50 h-screen w-full overscroll-contain duration-200 md:hidden"
+    class="fixed inset-0 z-50 h-screen w-full overflow-x-hidden overscroll-contain duration-200 md:hidden"
     :class="{ invisible: !menuOpen, visible: menuOpen }"
   >
     <div
